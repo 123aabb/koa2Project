@@ -1,0 +1,23 @@
+2021-02-19 10:37:49:   <-- GET /css/list.css
+2021-02-19 10:37:49:   <-- GET /css/right.css
+2021-02-19 10:37:49:   --> GET /css/list.css 200 27ms 548b
+2021-02-19 10:37:49:   --> GET /css/right.css 200 14ms 532b
+2021-02-19 11:24:59:   <-- GET /javascripts/query-object.js
+2021-02-19 11:24:59:   --> GET /javascripts/query-object.js 200 5ms 8.46kb
+2021-02-19 11:24:59:   <-- GET /favicon.ico
+2021-02-19 11:24:59: 404
+2021-02-19 11:24:59:   --> GET /favicon.ico 200 13ms 2.26kb
+2021-02-19 11:31:01:   <-- GET /
+2021-02-19 11:31:01: Executing (default): SELECT count(`blog`.`id`) AS `count` FROM `blogs` AS `blog` LEFT OUTER JOIN `users` AS `user` ON `blog`.`userId` = `user`.`id` INNER JOIN `userRelations` AS `userRelation` ON `blog`.`userId` = `userRelation`.`followerId` AND `userRelation`.`userId` = 1;
+2021-02-19 11:31:01: Executing (default): SELECT `blog`.`id`, `blog`.`userId`, `blog`.`content`, `blog`.`image`, `blog`.`createdAt`, `blog`.`updatedAt`, `user`.`id` AS `user.id`, `user`.`userName` AS `user.userName`, `user`.`nickName` AS `user.nickName`, `user`.`picture` AS `user.picture`, `userRelation`.`id` AS `userRelation.id`, `userRelation`.`userId` AS `userRelation.userId`, `userRelation`.`followerId` AS `userRelation.followerId` FROM `blogs` AS `blog` LEFT OUTER JOIN `users` AS `user` ON `blog`.`userId` = `user`.`id` INNER JOIN `userRelations` AS `userRelation` ON `blog`.`userId` = `userRelation`.`followerId` AND `userRelation`.`userId` = 1 ORDER BY `blog`.`id` DESC LIMIT 0, 5;
+2021-02-19 11:31:01: Executing (default): SELECT count(`user`.`id`) AS `count` FROM `users` AS `user` INNER JOIN `userRelations` AS `userRelations` ON `user`.`id` = `userRelations`.`userId` AND `userRelations`.`followerId` = 1 AND `userRelations`.`userId` != 1;
+2021-02-19 11:31:01: Executing (default): SELECT `user`.`id`, `user`.`userName`, `user`.`nickName`, `user`.`picture`, `userRelations`.`id` AS `userRelations.id`, `userRelations`.`userId` AS `userRelations.userId`, `userRelations`.`followerId` AS `userRelations.followerId`, `userRelations`.`createdAt` AS `userRelations.createdAt`, `userRelations`.`updatedAt` AS `userRelations.updatedAt` FROM `users` AS `user` INNER JOIN `userRelations` AS `userRelations` ON `user`.`id` = `userRelations`.`userId` AND `userRelations`.`followerId` = 1 AND `userRelations`.`userId` != 1 ORDER BY `user`.`id` DESC;
+2021-02-19 11:31:01: Executing (default): SELECT count(`userRelation`.`id`) AS `count` FROM `userRelations` AS `userRelation` LEFT OUTER JOIN `users` AS `user` ON `userRelation`.`followerId` = `user`.`id` WHERE `userRelation`.`userId` = 1 AND `userRelation`.`followerId` != 1;
+2021-02-19 11:31:01: Executing (default): SELECT `userRelation`.`id`, `userRelation`.`userId`, `userRelation`.`followerId`, `userRelation`.`createdAt`, `userRelation`.`updatedAt`, `user`.`id` AS `user.id`, `user`.`userName` AS `user.userName`, `user`.`nickName` AS `user.nickName`, `user`.`picture` AS `user.picture` FROM `userRelations` AS `userRelation` LEFT OUTER JOIN `users` AS `user` ON `userRelation`.`followerId` = `user`.`id` WHERE `userRelation`.`userId` = 1 AND `userRelation`.`followerId` != 1 ORDER BY `userRelation`.`id` DESC;
+2021-02-19 11:31:02:   --> GET / 200 92ms 12.83kb
+2021-02-19 11:31:02:   <-- GET /css/main.css
+2021-02-19 11:31:02:   --> GET /css/main.css 200 5ms 661b
+2021-02-19 11:31:02:   <-- GET /css/jquery.atwho.css
+2021-02-19 11:31:02:   <-- GET /javascripts/jquery.atwho.js
+2021-02-19 11:31:02:   --> GET /css/jquery.atwho.css 200 5ms 1.28kb
+2021-02-19 11:31:02:   --> GET /javascripts/jquery.atwho.js 200 5ms 36.65kb

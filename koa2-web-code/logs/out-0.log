@@ -1,0 +1,21 @@
+2021-02-19 10:37:49:   <-- GET /javascripts/jquery.caret.js
+2021-02-19 10:37:49:   --> GET /javascripts/jquery.caret.js 200 12ms 12.88kb
+2021-02-19 10:37:49:   <-- GET /javascripts/query-object.js
+2021-02-19 10:37:49:   --> GET /javascripts/query-object.js 200 2ms 8.46kb
+2021-02-19 10:37:49:   <-- GET /images/ceshi.jpg
+2021-02-19 10:37:49:   --> GET /images/ceshi.jpg 200 3ms 43.76kb
+2021-02-19 10:37:49:   <-- GET /favicon.ico
+2021-02-19 10:37:49: 404
+2021-02-19 10:37:49:   --> GET /favicon.ico 200 15ms 2.26kb
+2021-02-19 11:24:58:   <-- GET /
+2021-02-19 11:24:59:   --> GET / 302 25ms 57b
+2021-02-19 11:24:59:   <-- GET /login?url=%2F
+2021-02-19 11:24:59:   --> GET /login?url=%2F 200 12ms 2.38kb
+2021-02-19 11:24:59:   <-- GET /css/main.css
+2021-02-19 11:24:59:   --> GET /css/main.css 200 3ms 661b
+2021-02-19 11:24:59:   <-- GET /javascripts/my-ajax.js
+2021-02-19 11:24:59:   --> GET /javascripts/my-ajax.js 200 3ms 2.45kb
+2021-02-19 11:31:02:   <-- GET /css/list.css
+2021-02-19 11:31:02:   <-- GET /css/right.css
+2021-02-19 11:31:02:   --> GET /css/right.css 200 2ms 532b
+2021-02-19 11:31:02:   --> GET /css/list.css 200 4ms 548b
